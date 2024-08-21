@@ -6,5 +6,9 @@ app = Flask(__name__)
 def index():
   return render_template('index.html')
 
+@app.route('/test')
+def index():
+  return 'Test succes'
+
 if __name__ == '__main__':
   app.run(port=5000)
